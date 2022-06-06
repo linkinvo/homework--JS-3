@@ -48,7 +48,7 @@ const objectIntersection = (firstObj, secondObj) => {
   const firstObjKeys = Object.keys(firstObj);
   const obj = {};
 
-  firstObjKeys.forEach((key, _, arr) => {
+  firstObjKeys.forEach((key) => {
     if (firstObj[key] === secondObj[key]) {
       return obj[key] = firstObj[key];
     }
